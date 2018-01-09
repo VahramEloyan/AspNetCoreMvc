@@ -52,7 +52,7 @@ namespace PartyInvites.Controllers
         }
         public ViewResult ListResponses()
         {
-            return View();
+            return View(Repository.Responses.Where(r=> r.WillAttend==true));
         }
     }
 }
