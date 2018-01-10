@@ -7,10 +7,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>RsvpForm</title>
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
     <div>
-        This is the RsvpForm.cshtml View
+        <p id="vvv" class="kkk" >This is the RsvpForm.cshtml View</p>
         <form asp-action="RsvpForm" method="post">
             <div asp-validation-summary="All"></div>
             <p>
@@ -32,7 +33,7 @@
                     <option value="false">No, I can't came</option>
                 </select>
             </p>
-            <button type="submit">Submit Rsvp</button>
+            <button type="submit" id="vvv">Submit Rsvp</button>
         </form>
     </div>
 </body>
