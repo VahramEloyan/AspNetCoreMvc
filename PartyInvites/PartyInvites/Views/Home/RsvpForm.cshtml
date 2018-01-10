@@ -12,17 +12,17 @@
     <div>
         This is the RsvpForm.cshtml View
         <form asp-action="RsvpForm" method="post">
+            <div asp-validation-summary="All"></div>
             <p>
                 <label asp-for="Name">Your Name:</label>
-                <input asp-for="Name" type="text" />
+                <input asp-for="Name" type="text" /><span style="color:Red">*</span>
             </p>
             <p>
-                <label asp-for="Email">Your Email</label>
-                <input asp-for="Email" type="text" />
-            </p>
+                <label asp-for="Email">Your Email:</label>
+                <input asp-for="Email" type="text" /><span style="color:Red">*</span>
             <p>
-                <label asp-for="Phone">Your Phone</label>
-                <input asp-for="Phone" type="text" />
+                <label asp-for="Phone">Your Phone:</label>
+                <input asp-for="Phone" type="text" /><span style="color:Red">*</span> 
             </p>
             <p>
                 <label>Will You Attend?</label>
